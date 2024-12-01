@@ -1,0 +1,141 @@
+
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: url(pic.gif);
+    background-size: cover;
+    
+
+  }
+  
+  .weather-container {
+    background-color: #aaedff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #4ccff3;
+    color: white;
+    padding: 25px 20px;
+    height: 50px;
+  }
+  
+  
+  .location {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .current-weather {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .temp {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .temp span {
+    font-size: 32px;
+  }
+  
+  .condition, .date {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    border-top: 1px solid #151414;
+  }
+  
+  .hour {
+    text-align: center;
+    flex: 1 1 25%;
+    margin-bottom: 10px;
+  }
+  
+  .hour img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hour span {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .daily-forecast {
+    padding: 10px 20px;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #131111;
+  }
+  
+  .day img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .day span {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .hourly-forecast {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hour {
+      flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .time, .location {
+      font-size: 18px;
+    }
+  
+    .temp {
+      font-size: 48px;
+    }
+  
+    .temp span {
+      font-size: 24px;
+    }
+  
+    .condition, .date {
+      font-size: 14px;
+    }
+  
+    .hour img, .day img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
